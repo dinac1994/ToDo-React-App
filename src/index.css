@@ -1,13 +1,183 @@
 body {
   margin: 0;
+  padding-top: 10px;
+  font-size: 36px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 10px;
+}
+
+.textbar {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  font-size: 0.5em;
+  padding: 0.8em;
+  flex-grow: 1;
+}
+
+.textbar:focus {
+  border: 1px solid grey;
+  outline: none;
+}
+
+.add-todo {
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 0.5em;
+  padding-left: 0.93em;
+  padding-right: 0.93em;
+  background-color: white;
+  color: #ccc;
+}
+
+.add-todo:hover {
+  background-color: #def5cc;
+  cursor: pointer;
+  border-color: #bcec96;
+  color: #85db42;
+}
+
+.clear-actions {
+  display: flex;
+  gap: 0.5em;
+}
+
+.clear-completed {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  font-size: 0.5em;
+  padding: 0.8em;
+  background-color: white;
+}
+
+.clear-completed:hover {
+  cursor: pointer;
+  border-color: #ee8989;
+  color: #e65757;
+  background-color: #f8b6b6;
+}
+
+.clear-all {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  font-size: 0.5em;
+  padding: 0.8em;
+  background-color: white;
+}
+
+.clear-all:hover {
+  cursor: pointer;
+  border-color: #ee8989;
+  color: #e65757;
+  background-color: #f8b6b6;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  font-size: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.task {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.task-actions {
+  margin-left: auto;
+  display: flex;
+}
+
+.complete-task {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid white;
+  font-size: 0.8em;
+  padding: 0.8em;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-task:hover {
+  cursor: pointer;
+  background-color: #c5e7c2;
+  color: #2aaf1e;
+}
+
+.highlight {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid white;
+  font-size: 0.8em;
+  padding: 0.8em;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #2aaf1e;
+}
+
+.highlight:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.delete-task {
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid white;
+  font-size: 0.8em;
+  padding: 0.8em;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-task:hover {
+  cursor: pointer;
+  background-color: #f49393;
+  color: #af1e1e;
 }
