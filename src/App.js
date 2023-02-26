@@ -20,7 +20,6 @@ function App() {
   const addButton = () => {
     dispatch(addTodo(task));
     setTask("");
-    
   };
 
   return (
