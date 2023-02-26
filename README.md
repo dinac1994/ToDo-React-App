@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 App available at https://dinac1994.github.io/ToDo-React-App/
 
+.
 
 ## Available Scripts
 
